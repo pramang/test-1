@@ -1,0 +1,20 @@
+/* 회사소개 */
+.sub1 {} /* 페이지명 */
+.sub1 .inner { padding: 120px 0; height: 1500px; }
+.sub1 h2 { font-size: 40px; font-weight: 500; }
+
+/* 오시는길 */
+.sub2 {}
+.sub2 h2 {}
+
+/* sub3.html */
+.sub3 {}
+.sub3 h2 {}
+
+/* sub4.html */
+.sub4 {}
+.sub4 h2 {}
+
+/* sub5.html */
+.sub5 {}
+.sub5 h2 {}

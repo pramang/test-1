@@ -1,0 +1,17 @@
+/* main */
+#visual { width: 100%; background-repeat: no-repeat; background-position: 0 0; background-size: cover; background-image: url(../images/visual4.jpg); height: 800px; }
+
+.main {}
+.main .con-box { width: 100%; }
+.main .con-box .inner { padding: 120px 0; }
+.main .con-box h2 { text-align: center; font-size: 50px; font-weight: 600; color:#000 }
+
+.main .con1 { background:#F8BBD0 ;}
+.main .con1 .inner { background:#F06292 ; height: 700px;}
+.main .con2 { background:#EF9A9A ;}
+.main .con2 .inner { background: #EF5350; height: 700px;}
+.main .con3 { background: #90CAF9;}
+.main .con3 .inner { background: #42A5F5; height: 700px;}
+.main .con4 { background:#5C6BC0 ;}
+.main .con4 .inner { background: #3949AB; height: 700px;}
+

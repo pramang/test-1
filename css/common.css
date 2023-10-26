@@ -1,0 +1,55 @@
+#wrap { width: 100%; min-width: 1600px; }
+.inner { width: 1400px; margin: auto; position: relative; box-sizing: border-box;}
+
+#header { width: 100%; position: absolute;left: 0; top: 0; z-index: 100;  height: 115px; overflow: hidden; transition: 0.2s linear;}
+#header.on { height: 355px;}
+
+#header::before { content:""; position: absolute; left: 0; top: 35px; display: block; width: 100%; height: 1px; background: #dcdcdc; opacity: 0.6;}
+#header::after { content: ""; position: absolute; left: 0; top: 115px; width: 100%; height: 240px; 
+    /* background: #eee;  */
+    background: rgba(211, 207, 207, 0.5);
+    z-index: -10; }
+
+#header .inner { height: 355px;}
+#header h1 { position: absolute; left: 0; top: 50px; }
+#header .top-menu { position: absolute; right: 0; top: 10px; display: flex; }
+#header .top-menu li { margin-left: 20px; position: relative; }
+#header .top-menu li::after { content:""; display: block; width: 1px; height: 12px; background: #999; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); }
+#header .top-menu li:last-child::after{ display: none;}
+#header .top-menu li a { font-size: 14px; color:#fff }
+
+#header .nav { position: absolute; right: 0; top: 65px;  }
+#header .nav .gnb { display: flex; }
+#header .nav .gnb > li { margin-left: 80px; }
+#header .nav .gnb > li:first-child { margin-left: 0px; }
+/* a에 width , padding */
+#header .nav .gnb li a { display: block; text-align: center;  line-height: 35px; box-sizing: border-box; font-size: 18px; font-weight: 500; color:#fff}
+#header .nav .gnb li ul {  position: absolute; top: 60px;  }
+/* #header .nav .gnb li ul.on { pointer-events: auto; opacity: 1; } */
+
+/* ul은  position: absolute; 아니어도 된다 */
+#header .nav .gnb li.m0 ul { left: 0px; }
+#header .nav .gnb li.m1 ul { left: 178px; }
+#header .nav .gnb li.m2 ul { left: 355px; }
+#header .nav .gnb li.m3 ul { left: 530px; }
+#header .nav .gnb li.m4 ul { left: 700px; }
+#header .nav .gnb li.m5 ul { left: 890px; }
+
+#header .nav .gnb li ul li { margin-right: 15px; }
+#header .nav .gnb li ul li a { font-size: 16px; font-weight: normal; line-height: 35px; color:#000 }
+
+
+#container {}
+#content {}
+
+#footer { width: 100%; background: #4A148C; color:#fff }
+#footer .inner { height: 300px; padding: 20px 0; }
+
+/* 서브페이지 공통 */
+#subVisual { width: 100%; background-repeat: no-repeat; background-position: 0 0; background-size: cover; height: 350px; display: flex; justify-content: center; align-items: center;  }
+#subVisual h2 { font-size: 60px; font-weight: 500; color:#fff }
+#subVisual.vis1 { background-image: url(../images/visual1.jpg); }
+#subVisual.vis2 { background-image: url(../images/visual2.jpg); }
+#subVisual.vis3 { background-image: url(../images/visual3.jpg); }
+#subVisual.vis4 { background-image: url(../images/visual4.jpg); }
+#subVisual.vis5 { background-image: url(../images/visual1.jpg); }
